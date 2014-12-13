@@ -1,0 +1,22 @@
+.post-icon, .skype-icon, .tel-icon{
+	background: url(sprites.png) no-repeat;
+}
+
+.post-icon{
+	background-position: 0 0;
+	width: 21px;
+	height: 16px;
+}
+
+.skype-icon{
+	background-position: 0 -50px ;
+	width: 20px;
+	height: 20px;
+}
+
+.tel-icon{
+	background-position: 0 -100px ;
+	width: 19px;
+	height: 22px;
+}
+
