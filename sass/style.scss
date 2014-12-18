@@ -196,6 +196,7 @@ body {
 			margin-top: 25px;
 			background-color: $contacts-bgc;
 			font: 17px/40px 'fira_sansbook';
+			margin-bottom: 25px;
 			h2 {
 				color: $contacts-fc;
 				padding-left: 21px;
@@ -203,6 +204,7 @@ body {
 			}
 			.contact-list-line {
 				height: auto;
+				padding-left: 11px;
 				a {
 					color: $contacts-fc;
 					text-decoration: none;
@@ -216,7 +218,7 @@ body {
 			.post-icon, .skype-icon, .tel-icon {
 				background: url(../img/contacts-sprites.png) no-repeat;
 				display: inline-block;
-				margin: 10px 20px 10px 42px;
+				margin: 10px 5px 10px 0px;
 			}
 			.post {
 				background-color: $post-bgc;

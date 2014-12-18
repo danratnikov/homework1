@@ -6,24 +6,7 @@
 
       <!-- sidebar -->
 
-      <div class="sidebar">
-        <div class="menu border-rad3">
-          <ul class="menu-list">
-            <li class="menu-item"><a href="index.php">Обо мне</a></li>
-            <li class="menu-item"><a href="myworks.php">Мои работы</a></li>
-            <li class="menu-item active"><a href="contacts.php">Связаться со мной</a></li>
-          </ul>
-        </div>
-        <div class="contacts border-rad3">
-          <h2>Контакты</h2>
-          <ul class="contacts-list">
-            <li class="contact-list-line post"><span class="post-icon"></span><a href="mailto:ratnikov.danil@gmail.com">pochta@mail.ru</a></li>
-            <li class="contact-list-line tel"><span class="tel-icon"></span><a href="tel:+79826220560">+79812342323</a></li>
-            <li class="contact-list-line skype"><span class="skype-icon"></span><a href="skype:ratnikov.danil">nickname</a></li>
-          </ul>
-        </div>
-      </div>
-
+  <?php  require_once('sidebar.php');?>
       <!-- main content -->
         
       <div class="content border-rad4">

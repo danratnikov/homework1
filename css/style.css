@@ -232,6 +232,7 @@ body {
   margin-top: 25px;
   background-color: #3ba8c0;
   font: 17px/40px 'fira_sansbook';
+  margin-bottom: 25px;
 }
 .container .sidebar .contacts h2 {
   color: #ffffff;
@@ -240,6 +241,7 @@ body {
 }
 .container .sidebar .contacts .contact-list-line {
   height: auto;
+  padding-left: 11px;
 }
 .container .sidebar .contacts .contact-list-line a {
   color: #ffffff;
@@ -253,7 +255,7 @@ body {
 .container .sidebar .contacts .post-icon, .container .sidebar .contacts .skype-icon, .container .sidebar .contacts .tel-icon {
   background: url(../img/contacts-sprites.png) no-repeat;
   display: inline-block;
-  margin: 10px 20px 10px 42px;
+  margin: 10px 5px 10px 0px;
 }
 .container .sidebar .contacts .post {
   background-color: #41b9d4;
