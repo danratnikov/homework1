@@ -1,9 +1,9 @@
 <div class="sidebar">
   <div class="menu border-rad3">
     <ul class="menu-list">
-      <li class="menu-item <?php if ($page == "about") echo "active"; ?>"><a href="index.php?page=about">Обо мне</a></li>
-      <li class="menu-item <?php if ($page == "works") echo "active"; ?>"><a href="index.php?page=works">Мои работы</a></li>
-      <li class="menu-item <?php if ($page == "contacts") echo "active"; ?>"><a href="index.php?page=contacts">Связаться со мной</a></li>
+      <li class="menu-item <?php if ($page == "about") echo "active"; ?>"><a href="/about">Обо мне</a></li>
+      <li class="menu-item <?php if ($page == "works") echo "active"; ?>"><a href="/works">Мои работы</a></li>
+      <li class="menu-item <?php if ($page == "contacts") echo "active"; ?>"><a href="/contacts">Связаться со мной</a></li>
     </ul>
   </div>
   <div class="contacts border-rad3">
