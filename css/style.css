@@ -76,6 +76,7 @@ body {
 .header {
   height: 116px;
   background-color: #eff3f7;
+  min-width: 960px;
 }
 .header .logo {
   float: left;
@@ -185,6 +186,7 @@ body {
 .container {
   width: 960px;
   margin: 42px auto 41px;
+  min-width: 960px;
 }
 .container .sidebar {
   float: left;
@@ -211,7 +213,6 @@ body {
 .container .sidebar .menu-list .menu-item a {
   display: block;
   outline: none;
-  height: 28px;
   text-decoration: none;
   padding: 22px 17px;
   color: #959aa8;
