@@ -7,11 +7,6 @@
 @import "compass/css3/box-shadow";
 @import "compass/css3/";
 
-@font-face {
-	font-family: "ProximaNovaCond-Semibold";
-	source: url(../fonts/Proxima-Nova/ProximaNovaCond-Semibold.otf);
-}
-
 $header-bgc: #eff3f7;
 $header-fc: #6f727e;
 $footer-height: 78px;
@@ -154,6 +149,9 @@ body {
 	margin: 42px auto 41px;
 	min-width: 960px;
 	.sidebar {
+		.menu {
+			margin-bottom: 25px;
+		}
 		float: left;
 		width: 250px;
 		.menu-list {
@@ -204,7 +202,7 @@ body {
 				font-size: 21px;
 			}
 			.contact-list-line {
-				height: 38px;
+				height: auto;
 				a {
 					color: $contacts-fc;
 					text-decoration: none;
@@ -291,6 +289,8 @@ body {
 		}
 		.property p {
 			letter-spacing: -0.6px;
+			float: left;
+			width: 200px;
 		}
 		.prop-name {
 			display: block;

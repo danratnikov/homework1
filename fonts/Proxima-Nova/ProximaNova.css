@@ -1,0 +1,60 @@
+@font-face {
+	font-family: "ProximaNova-Semibold";
+	source: url(../fonts/Proxima-Nova/ProximaNovaCond-Semibold.otf);
+}
+@font-face {
+	font-family: "ProximaNova-Black";
+	source: url(../fonts/Proxima-Nova/ProximaNovaCond-Black.otf);
+}
+@font-face {
+	font-family: "ProximaNova-Bold";
+	source: url(../fonts/Proxima-Nova/ProximaNovaCond-Bold.otf);
+}
+@font-face {
+	font-family: "ProximaNova-BoldIt";
+	source: url(../fonts/Proxima-Nova/ProximaNovaCond-BoldIt.otf);
+}
+@font-face {
+	font-family: "ProximaNova-Extrabold";
+	source: url(../fonts/Proxima-Nova/ProximaNovaCond-Extrabold.otf);
+}
+@font-face {
+	font-family: "ProximaNova-Light";
+	source: url(../fonts/Proxima-Nova/ProximaNovaCond-Light.otf);
+}
+@font-face {
+	font-family: "ProximaNova-LightItalic";
+	source: url(../fonts/Proxima-Nova/ProximaNovaCond-LightItalic.otf);
+}
+@font-face {
+	font-family: "ProximaNova-RegularItalic";
+	source: url(../fonts/Proxima-Nova/ProximaNovaCond-RegularItalic.otf);
+}
+@font-face {
+	font-family: "ProximaNova-SemiboldItalic";
+	source: url(../fonts/Proxima-Nova/ProximaNovaCond-SemiboldItalic.otf);
+}
+@font-face {
+	font-family: "ProximaNovaCond-Semibold";
+	source: url(../fonts/Proxima-Nova/ProximaNovaCond-Semibold.otf);
+}
+@font-face {
+	font-family: "ProximaNovaCond-SemiboldIt";
+	source: url(../fonts/Proxima-Nova/ProximaNovaCond-SemiboldIt.otf);
+}
+@font-face {
+	font-family: "ProximaNovaCond-Light";
+	source: url(../fonts/Proxima-Nova/ProximaNovaCond-Light.otf);
+}
+@font-face {
+	font-family: "ProximaNovaCond-LightIt";
+	source: url(../fonts/Proxima-Nova/ProximaNovaCond-LightIt.otf);
+}
+@font-face {
+	font-family: "ProximaNovaCond-RegularIt";
+	source: url(../fonts/Proxima-Nova/ProximaNovaCond-RegularItalic.otf);
+}
+@font-face {
+	font-family: "ProximaNovaCond-Regular";
+	source: url(../fonts/Proxima-Nova/ProximaNovaCond-Regular.otf);
+}

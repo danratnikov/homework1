@@ -59,10 +59,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-@font-face {
-  font-family: "ProximaNovaCond-Semibold";
-  source: url(../fonts/Proxima-Nova/ProximaNovaCond-Semibold.otf);
-}
 body {
   background-image: url(../img/comppattern2.png);
 }
@@ -192,6 +188,9 @@ body {
   float: left;
   width: 250px;
 }
+.container .sidebar .menu {
+  margin-bottom: 25px;
+}
 .container .sidebar .menu-list {
   border-radius: 3px;
   list-style: none;
@@ -240,7 +239,7 @@ body {
   font-size: 21px;
 }
 .container .sidebar .contacts .contact-list-line {
-  height: 38px;
+  height: auto;
 }
 .container .sidebar .contacts .contact-list-line a {
   color: #ffffff;
@@ -323,6 +322,8 @@ body {
 }
 .content .base-info .property p {
   letter-spacing: -0.6px;
+  float: left;
+  width: 200px;
 }
 .content .base-info .prop-name {
   display: block;
