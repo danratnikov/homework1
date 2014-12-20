@@ -87,19 +87,33 @@
 		</div>
 		</div>
 		<div class="modal-header-divider"></div>
-		<div class="modal-body">
 		<form action="" id="add-project">
-			<label for="name" class="form-label">Название проекта</label>
-			<input type="text" class="form-input" id="name" name="proj-name" placeholder="Введите название">
-			<label for="filename" class="form-label">Картинка проекта</label>
-			<input type="text" class="form-input" id="filename" name="proj-filename" placeholder="Загрузите изображение">
-			
-			<label for="url" class="form-label">URL проекта</label>
-			<input type="text" class="form-input" id="url" name="proj-url" placeholder="Добавьте ссылку">
-			<label for="description" class="form-label">Описание</label>
-			<textarea name="proj-desc" class="form-textarea" id="description" placeholder="Пара слов о Вашем проекте"></textarea>
-			<input id="but-add-project" type="submit" value="Добавить" class="but-add-project">
+			<div class="modal-body">
+				<div id="message-error" class="input-error message-box">
+					<h4>Ошибка!</h4>
+					<p>Невозможно добавить проект</p>
+				</div>
+				<label for="name" class="form-label">Название проекта</label>
+				<input type="text" class="form-input" id="name" data-name="название" name="proj_name" placeholder="Введите название">
+				<div class="form-row">
+					<label for="filename" class="form-label">Картинка проекта</label>
+					<input type="text" class="form-input" id="filename"  data-name="имя файла" name="proj_filename" placeholder="Загрузите изображение">
+					<div class="input-file">
+						<input type="file" id="input-file" name="filename_from_input">
+					</div>
+				</div>
+				<label for="url" class="form-label">URL проекта</label>
+				<input type="text" class="form-input" id="url" name="proj_url" data-name="ссылку" placeholder="Добавьте ссылку">
+				<label for="description" class="form-label">Описание</label>
+				<textarea name="proj_desc" class="form-textarea" data-name="описание" id="description" placeholder="Пара слов о Вашем проекте"></textarea>
+				<input id="but-add-project" type="submit" value="Добавить" class="but-add-project">
+			</div>
 		</form>
+	</div>
+	<div id="message-success" class="message">
+		<div class="message-box message-success">
+			<h4>Ура!</h4>
+			<p>Проект добавлен!</p>			
 		</div>
 	</div>
 </div>

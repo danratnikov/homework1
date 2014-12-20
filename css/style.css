@@ -59,7 +59,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-body {
+.wrapper {
   background-image: url(../img/comppattern2.png);
 }
 
@@ -574,10 +574,30 @@ input, label, textarea {
   background-color: #eff3f7;
   font-family: 'fira_sanslight';
 }
+.footer .login-locker {
+  float: left;
+  padding-top: 25px;
+  padding-left: 50px;
+  overflow: hidden;
+}
+.footer .login-locker a {
+  background: no-repeat url(../img/login.png);
+  width: 20px;
+  height: 32px;
+  display: block;
+}
+.footer .login-locker a:hover {
+  background: no-repeat url(../img/login-hover.png);
+}
 .footer h3 {
   font-size: 13px;
   line-height: 78px;
   text-align: center;
+}
+
+.modal-header-divider {
+  height: 9px;
+  background-color: #67dffa;
 }
 
 .modal-back {
@@ -590,11 +610,40 @@ input, label, textarea {
   background-color: rgba(111, 114, 126, 0.75);
 }
 
-.modal-box {
+.form-label {
+  font: 17px "fira_sansbook";
+  color: #959aa8;
+  margin-bottom: 1px;
+}
+
+.form-input, .form-textarea {
   box-sizing: border-box;
-  position: relative;
+  font: 13px/37px 'fira_sanslight';
+  padding-left: 8px;
+  margin-bottom: 6px;
+  outline: none;
+  border: 1px solid #48cbe8;
+}
+.form-input:-moz-placeholder, .form-textarea:-moz-placeholder {
+  color: #48cbe8;
+}
+.form-input::-moz-placeholder, .form-textarea::-moz-placeholder {
+  color: #48cbe8;
+}
+.form-input:-ms-input-placeholder, .form-textarea:-ms-input-placeholder {
+  color: #48cbe8;
+}
+.form-input::-webkit-input-placeholder, .form-textarea::-webkit-input-placeholder {
+  color: #48cbe8;
+}
+
+.modal-box {
+  overflow: visible;
+  box-sizing: border-box;
+  position: absolute;
   width: 365px;
-  top: 0px;
+  top: 5%;
+  left: 38%;
   background-color: #eff3f7;
   -moz-box-shadow: 0px 6px 12.48px 0.52px rgba(13, 16, 7, 0.35);
   -webkit-box-shadow: 0px 6px 12.48px 0.52px rgba(13, 16, 7, 0.35);
@@ -625,36 +674,8 @@ input, label, textarea {
   padding-top: 5px;
   float: left;
 }
-.modal-box .modal-header-divider {
-  height: 9px;
-  background-color: #67dffa;
-}
 .modal-box .modal-body {
   padding: 7px 22px;
-}
-.modal-box .modal-body .form-label {
-  font: 17px "fira_sansbook";
-  color: #959aa8;
-  margin-bottom: 1px;
-}
-.modal-box .modal-body .form-input, .modal-box .modal-body .form-textarea {
-  font: 13px/37px 'fira_sanslight';
-  padding-left: 8px;
-  margin-bottom: 6px;
-  outline: none;
-  border: 1px solid #48cbe8;
-}
-.modal-box .modal-body .form-input:-moz-placeholder, .modal-box .modal-body .form-textarea:-moz-placeholder {
-  color: #48cbe8;
-}
-.modal-box .modal-body .form-input::-moz-placeholder, .modal-box .modal-body .form-textarea::-moz-placeholder {
-  color: #48cbe8;
-}
-.modal-box .modal-body .form-input:-ms-input-placeholder, .modal-box .modal-body .form-textarea:-ms-input-placeholder {
-  color: #48cbe8;
-}
-.modal-box .modal-body .form-input::-webkit-input-placeholder, .modal-box .modal-body .form-textarea::-webkit-input-placeholder {
-  color: #48cbe8;
 }
 .modal-box .modal-body input[name="proj-filename"] {
   position: relative;
@@ -681,4 +702,265 @@ input, label, textarea {
   text-align: center;
   font: 19px/31px 'fira_sansbook';
   cursor: pointer;
+}
+
+.form_container {
+  font: 40px "fira_sansbook";
+  width: 590px;
+  margin: 0 auto;
+  -moz-box-shadow: rgba(13, 16, 7, 0.29) 0px 4px 6.86px 0.14px;
+  -webkit-box-shadow: rgba(13, 16, 7, 0.29) 0px 4px 6.86px 0.14px;
+  box-shadow: rgba(13, 16, 7, 0.29) 0px 4px 6.86px 0.14px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.form_container h2 {
+  display: block;
+  background-color: #48cbe8;
+  line-height: 92px;
+  color: #fff;
+  text-align: center;
+  padding-left: 14px;
+  padding-top: 5px;
+}
+.form_container .input-container {
+  background-color: #eff3f7;
+  overflow: hidden;
+  font-size: 36px;
+}
+.form_container .input-container label {
+  margin-top: 15px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 36px;
+}
+.form_container .input-container input[type="text"] {
+  width: 425px;
+  height: 62px;
+  margin: 0 auto;
+  margin-bottom: 18px;
+}
+
+.form-row {
+  position: relative;
+}
+
+.input-file {
+  font-size: 0px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 52px;
+  height: 42px;
+  overflow: hidden;
+  background: no-repeat url("../img/cloud.png") #48cbe8;
+  background-position: center;
+}
+.input-file input[type="file"] {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.blue-button {
+  font: 36px/50px "fira_sansbook";
+  border: none;
+  display: block;
+  -moz-border-radius: 8px / 8px;
+  -webkit-border-radius: 8px 8px;
+  border-radius: 8px / 8px;
+  background-color: #48cbe8;
+  width: 226px;
+  height: 50px;
+  margin: 0 auto;
+  color: #fff;
+  margin-bottom: 50px;
+  -moz-box-shadow: #3ba8c0 0px -4px 0px inset;
+  -webkit-box-shadow: #3ba8c0 0px -4px 0px inset;
+  box-shadow: #3ba8c0 0px -4px 0px inset;
+}
+.blue-button:hover {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.blue-button active {
+  -moz-box-shadow: #3ba8c0 0px 4px 0px inset;
+  -webkit-box-shadow: #3ba8c0 0px 4px 0px inset;
+  box-shadow: #3ba8c0 0px 4px 0px inset;
+}
+
+.message {
+  position: absolute;
+  left: 38%;
+  top: 38%;
+  width: 320px;
+  padding: 7px;
+  margin: 0 auto;
+  background-color: #eff3f7;
+  -moz-box-shadow: rgba(13, 16, 7, 0.35) 0px 6px 12.48px 0.52px;
+  -webkit-box-shadow: rgba(13, 16, 7, 0.35) 0px 6px 12.48px 0.52px;
+  box-shadow: rgba(13, 16, 7, 0.35) 0px 6px 12.48px 0.52px;
+  -moz-border-radius: 4px / 4px;
+  -webkit-border-radius: 4px 4px;
+  border-radius: 4px / 4px;
+}
+
+.input-error {
+  background-color: #fdd5d2;
+  color: #f97e76;
+  border: 1px solid #f97e76;
+}
+.input-error:-moz-placeholder {
+  color: #f97e76;
+}
+.input-error::-moz-placeholder {
+  color: #f97e76;
+}
+.input-error:-ms-input-placeholder {
+  color: #f97e76;
+}
+.input-error::-webkit-input-placeholder {
+  color: #f97e76;
+}
+
+.message-success {
+  background-color: #b8e1ce;
+  color: #49bb7b;
+  border: 1px solid #49bb7b;
+}
+
+.message-box {
+  padding: 5px 10px;
+}
+.message-box h4 {
+  font: 25px "fira_sansbook";
+}
+.message-box p {
+  font: 15px "fira_sansbook";
+}
+
+#message-error, #message-success {
+  display: none;
+}
+
+.tooltip {
+  position: absolute;
+  z-index: 1070;
+  display: block;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.4;
+  visibility: visible;
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+
+.tooltip.in {
+  filter: alpha(opacity=90);
+  opacity: .9;
+}
+
+.tooltip.top {
+  padding: 5px 0;
+  margin-top: -3px;
+}
+
+.tooltip.right {
+  padding: 0 5px;
+  margin-left: 3px;
+}
+
+.tooltip.bottom {
+  padding: 5px 0;
+  margin-top: 3px;
+}
+
+.tooltip.left {
+  padding: 0 5px;
+  margin-left: -3px;
+}
+
+.tooltip-inner {
+  max-width: 200px;
+  padding: 3px 8px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #f97e76;
+  border-radius: 4px;
+}
+
+.tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.tooltip.top .tooltip-arrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: #f97e76;
+}
+
+.tooltip.top-left .tooltip-arrow {
+  right: 5px;
+  bottom: 0;
+  margin-bottom: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: #f97e76;
+}
+
+.tooltip.top-right .tooltip-arrow {
+  bottom: 0;
+  left: 5px;
+  margin-bottom: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: #f97e76;
+}
+
+.tooltip.right .tooltip-arrow {
+  top: 50%;
+  left: 0;
+  margin-top: -5px;
+  border-width: 5px 5px 5px 0;
+  border-right-color: #f97e76;
+}
+
+.tooltip.left .tooltip-arrow {
+  top: 50%;
+  right: 0;
+  margin-top: -5px;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #f97e76;
+}
+
+.tooltip.bottom .tooltip-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #f97e76;
+}
+
+.tooltip.bottom-left .tooltip-arrow {
+  top: 0;
+  right: 5px;
+  margin-top: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #f97e76;
+}
+
+.tooltip.bottom-right .tooltip-arrow {
+  top: 0;
+  left: 5px;
+  margin-top: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #f97e76;
 }

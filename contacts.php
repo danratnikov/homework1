@@ -11,7 +11,7 @@
         
       <div class="content border-rad4">
         <div class="contact-form">
-          <form action="sendmail.php" method="post">
+          <form id="sendmail">
             <div class="form-header">
               <h2>У вас интересный проект? Напишите мне</h2>
             </div>
@@ -21,16 +21,16 @@
                 <div class="input-row clearfix sixfive">
                   <div class="col1">
                     <label for="input-name">Имя</label>
-                    <input class="border-rad4" type="text" id="input-name" name="username" placeholder="Как к Вам обращаться" required>     
+                    <input class="border-rad4" type="text" id="input-name" name="username" placeholder="Как к Вам обращаться">     
                   </div>
                   <div class="col2">
                     <label for="input-email">Email</label>
-                    <input class="border-rad4" type="email" id="input-email" name="useremail" placeholder="Куда мне писать" required>
+                    <input class="border-rad4" type="email" id="input-email" name="useremail" placeholder="Куда мне писать">
                   </div>
                 </div>
                 <div class="input-row clearfix">
                   <label for="input-message">Сообщение</label>
-                  <textarea class="border-rad4" name="usermessage" id="input-message" placeholder="Кратко в чем суть" required></textarea>
+                  <textarea class="border-rad4" name="usermessage" id="input-message" placeholder="Кратко в чем суть"></textarea>
                 </div>
                 <div class="input-row clearfix">
                   <label for="captha-pic">Введите код, указанный на картинке</label>
@@ -39,7 +39,7 @@
                   </div>
                   <div class="col2">
                     <div class="captcha-input">
-                      <input class="border-rad4" type="text" name="captcha-text" placeholder="Введите код" required>
+                      <input class="border-rad4" type="text" name="captcha-text" placeholder="Введите код">
                     </div>
                   </div>
                 </div>
@@ -48,7 +48,7 @@
                     <input class="submit border-rad5" type="submit" value="Отправить">
                   </div>
                   <div class="col2">
-                    <input class="clear-form border-rad5" type="button" value="Очистить">
+                    <input id="clear_button" class="clear-form border-rad5" type="button" value="Очистить">
                   </div>  
                 </div>
               </div>
