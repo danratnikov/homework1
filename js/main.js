@@ -39,7 +39,7 @@ $(document).ready(function(){
 
 			$.ajax({
 			  type: "POST",
-			  url: form.attr('id') + ".php",
+			  url: 'scripts/' + form.attr('id') + ".php",
 			  data: form.serialize()
 			})
 			.done(function( msg ) {

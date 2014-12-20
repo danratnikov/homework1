@@ -2,10 +2,15 @@
 
 session_start();
 
+@require_once("scripts/config.php");
+
 $page = $_GET['page'];
 
 
+$pdo = getPDO();
 // Типа роутер
+
+$data = array();
 
 switch ($page) {
 	case 'admin':
@@ -15,6 +20,12 @@ switch ($page) {
 	
 	case 'works':
 		$title = "Мои работы";
+		if ($_SESSION['admin']) {
+			$admin = true;
+		} else {
+			$admin = false;
+		}
+		$portfolio = getDataAsArray($pdo, $data_sql['get_portfolio']);
 		require "works.php";
 		break;
 	
