@@ -21,16 +21,16 @@
                 <div class="input-row clearfix sixfive">
                   <div class="col1">
                     <label for="input-name">Имя</label>
-                    <input class="border-rad4" type="text" id="input-name" name="username" placeholder="Как к Вам обращаться">     
+                    <input data-name="имя" class="border-rad4" type="text" id="input-name" name="username" placeholder="Как к Вам обращаться">     
                   </div>
                   <div class="col2">
                     <label for="input-email">Email</label>
-                    <input class="border-rad4" type="email" id="input-email" name="useremail" placeholder="Куда мне писать">
+                    <input data-name="email" class="border-rad4" type="email" id="input-email"  data-place="right" name="useremail" placeholder="Куда мне писать">
                   </div>
                 </div>
                 <div class="input-row clearfix">
                   <label for="input-message">Сообщение</label>
-                  <textarea class="border-rad4" name="usermessage" id="input-message" placeholder="Кратко в чем суть"></textarea>
+                  <textarea data-name="соообщение" class="border-rad4" name="usermessage" id="input-message" placeholder="Кратко в чем суть"></textarea>
                 </div>
                 <div class="input-row clearfix">
                   <label for="captha-pic">Введите код, указанный на картинке</label>
@@ -39,16 +39,16 @@
                   </div>
                   <div class="col2">
                     <div class="captcha-input">
-                      <input class="border-rad4" type="text" name="captcha-text" placeholder="Введите код">
+                      <input data-name="текст на картинке" class="border-rad4" type="text" data-place="right" name="captcha-text" placeholder="Введите код">
                     </div>
                   </div>
                 </div>
                 <div class="input-row clearfix button-row">
                   <div class="col1">
-                    <input class="submit border-rad5" type="submit" value="Отправить">
+                    <input class="submit blue-button" type="submit" value="Отправить">
                   </div>
                   <div class="col2">
-                    <input id="clear_button" class="clear-form border-rad5" type="button" value="Очистить">
+                    <input id="clear_button" class="clear-form grey-button" type="button" value="Очистить">
                   </div>  
                 </div>
               </div>

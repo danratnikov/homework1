@@ -8,8 +8,10 @@ $page = $_GET['page'];
 
 
 $pdo = getPDO();
-// Типа роутер
 
+
+
+// Типа роутер
 $data = array();
 
 switch ($page) {

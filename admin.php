@@ -11,7 +11,7 @@
 					<input class="form-input" data-name="логин" type="text" name="user_login" placeholder="Введите логин">
 					<label class="form-label" for="user-pass">Пароль</label>
 					<input class="form-input" data-name="пароль" form-control" type="text" name="user_pass" placeholder="Введите пароль">
-					<input type="submit" value="Войти" class="blue-button">
+					<input type="submit" value="Войти" class="blue-button admin-submit">
 				</div>
 			</div>
 		</form>			

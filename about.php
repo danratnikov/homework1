@@ -11,21 +11,21 @@
     <div class="base-info content-block border-rad3">
       <h2><span class="block-title">Основная информация</span></h2>
       <div class="photo">
-        <img src="img/userpicboy.png" height="200" width="200" alt="Ratnikov Danil">
+        <img src="img/me.jpg" alt="Ratnikov Danil">
       </div>
       <div class="info">
         <ul class="properties">
           <li class="property clearfix">
             <h3 class="prop-name">Меня зовут:</h3>
-            <p>Иванов Андрей Степанович</p>
+            <p>Ратников Данил Геннадьевич</p>
           </li>
           <li class="property clearfix">
             <h3 class="prop-name">Мой возраст:</h3>
-            <p>25 лет</p>
+            <p>33 года</p>
           </li>
           <li class="property clearfix">
             <h3 class="prop-name">Мой город:</h3>
-            <p>Санкт-Петербург, Россия</p>
+            <p>Нижний Тагил, Россия</p>
           </li>
           <li class="property clearfix">
             <h3 class="prop-name">Моя специализация:</h3>
@@ -52,8 +52,8 @@
             <img src="img/briefcace.png" alt="">
           </div>
           <div class="feature-description">
-            <p class="feature-name">"ИП Боровицкий" - Продавец дисков</p>
-            <p class="feature-time">Сентябрь 2005 - Август 2008</p>
+            <p class="feature-name">"ЗАО Трест 88" - Мастер ПГС</p>
+            <p class="feature-time">Сентябрь 2004 - Сентябрь 2008</p>
           </div>
         </li>
         <li class="feature clearfix">
@@ -61,8 +61,8 @@
             <img src="img/briefcace.png" alt="">
           </div>
           <div class="feature-description">
-            <p class="feature-name">"ООО Системы безопастности" - Системный администратор</p>
-            <p class="feature-time">Июнь 2008 - Июль 2010</p>
+            <p class="feature-name">"ЗАО ГП УралГазСтрой" - Мастер ПГС</p>
+            <p class="feature-time">Ноябрь 2008 - Май 2013</p>
           </div>
         </li>
       </ul>
@@ -77,8 +77,8 @@
             <img src="img/heap-icon.png" height="23" width="42" alt="">
           </div>
           <div class="feature-description">
-            <p class="feature-name">Незаконченное высшее. СПБГУ ИТМО</p>
-            <p class="feature-time">Октябрь 2012 - по настоящее время</p>
+            <p class="feature-name">Высшее. НТИ(Ф)УГТУ-УПИ Инженер-строитель</p>
+            <p class="feature-time">Сентябрь 1998 - Июль 2004</p>
           </div>
         </li>
         <li class="feature clearfix">
@@ -87,7 +87,7 @@
           </div>
           <div class="feature-description">
             <p class="feature-name">Курсы Loftschool.ru</p>
-            <p class="feature-time">Ноябрь 2014 - по настоящее время</p>
+            <p class="feature-time">Декабрь 2014 - по настоящее время</p>
           </div>
         </li>
       </ul>

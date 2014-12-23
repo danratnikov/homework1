@@ -16,24 +16,55 @@
 			<div class="works-info content-block border-rad3">
 				<h2><span class="block-title">Мои работы</span></h2>
 				<ul class="works-list">
-					
-
-					<?php foreach ($portfolio as $work): ?>
 					<li class="work-item">
 						<div class="work-item-box border-rad5">
-							<img src="<?php echo $work['img']; ?> " alt="">
+							<img src="img/work-item1.png" alt="www.site.ru">
 							<div class="work-item-hover">
 								<h4>
-									<span><?php echo $work['title']; ?></span>
+									<span>Название</span>
 								</h4>								
 							</div>
 						</div>
-						<a href="<?php echo $work['url']; ?> "><?php echo $work['url']; ?></a>
-						<p><?php echo $work['description']; ?></p>
-					</li>	
-					<?php endforeach ?>
-					
-					<?php if ($admin == true): ?>
+						<a href="">www.site.ru</a>
+						<p>Информация о проекте 1 превью 2 строки...</p>
+
+					</li>
+					<li class="work-item">
+						<div class="work-item-box border-rad5">
+							<img class="border-rad3" src="img/work-item2.png" alt="www.site.ru">
+							<div class="work-item-hover">
+								<h4>
+									<span>Название</span>
+								</h4>								
+							</div>
+						</div>
+						<a href="">www.site.ru</a>
+						<p>Информация о проекте 2 превью 2 строки...</p>
+					</li>
+					<li class="work-item">
+						<div class="work-item-box border-rad5">
+							<img class="border-rad3" src="img/work-item3.png" alt="www.site.ru">
+							<div class="work-item-hover">
+								<h4>
+									<span>Название</span>
+								</h4>								
+							</div>
+						</div>
+						<a href="">www.site.ru</a>
+						<p>Информация о проекте 3 превью 2 строки...</p>
+					</li>
+					<li class="work-item">
+						<div class="work-item-box border-rad5">
+							<img class="border-rad3" src="img/work-item4.png" alt="www.site.ru">
+							<div class="work-item-hover">
+								<h4>
+									<span>Название</span>
+								</h4>								
+							</div>
+						</div>
+						<a href="">www.site.ru</a>
+						<p>Информация о проекте 4 превью 2 строки...</p>
+					</li>
 					<li class="work-item">
 						<div class="add-work-item">
 							<a href="" class="add-work-item-link">
@@ -41,9 +72,7 @@
 								<p>Добавить работу</p>
 							</a>
 						</div>
-					</li>	
-					<?php endif ?>
-					
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -77,7 +106,7 @@
 				<input type="text" class="form-input" id="url" name="proj_url" data-name="ссылку" placeholder="Добавьте ссылку">
 				<label for="description" class="form-label">Описание</label>
 				<textarea name="proj_desc" class="form-textarea" data-name="описание" id="description" placeholder="Пара слов о Вашем проекте"></textarea>
-				<input id="but-add-project" type="submit" value="Добавить" class="but-add-project">
+				<input id="but-add-project" type="submit" value="Добавить" class="but-add-project blue-button">
 			</div>
 		</form>
 	</div>
